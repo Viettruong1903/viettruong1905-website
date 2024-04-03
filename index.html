@@ -4,48 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!-- link -->
   <link rel="stylesheet" href="css/index.css">
-  <title>Viet Truong Portfolio</title>
+  <title>Viet Truong | Front-End Developer</title>
 </head>
 <body>
-  <!-- https://tse2.mm.bing.net/th?id=OIP.o7IkIdTxFQ_5X4BbBfOOrAHaJQ&pid=Api&P=0&h=180 -->
-  <header> 
-      <img src="https://tse4.mm.bing.net/th?id=OIP.Zm3sgRlr1VDFevgKALrl7wHaHa&pid=Api&P=0&h=180" alt="website logo">
-  
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Works</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+  <div class="root">
+    <header> 
+      <h3 class="logo">VietTruong.dev</h3>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
   </header>
   <main>
-    <section class="intro">
-      <div>
-        <h1>Hello,</h1>
-        <h2>I'm Viet</h2>
-        <h3>Web Developer</h3>
-        <p>Based in Canada,I'm front-end developer focused on creafting clean & user-friendly experiences, I am passionate about building, creating and explore new things that improves the lives of those around me.</p>
-        <a href="">Download CV</a>
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="content">
+          <div class="hero-main">
+            <div class="hero-text">
+              <h1>Front-End React Developer <img class="waving-hand" src="https://www.stefantopalovic.com/static/media/waving.1bae5fcfb51082b5c2b4.png" alt="waving_hand"></h1>
+              
+              <p>Hi, I'm Viet Truong. A passionate Front-end React Developer based in Edmonton, Canada</p>
+              <span>
+                <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/stefan-topalovic-dev/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
+                <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/stefvndev"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
+              </span>
+            </div>
+            <div class="hero-img"></div>
+          </div>
+          <div class="skills">
+            <p>Teck Stack</p>
+            <div class="logos"></div>
+          </div>
+        </div>
       </div>
-      <div>
-        <img src="https://tse2.mm.bing.net/th?id=OIP.o7IkIdTxFQ_5X4BbBfOOrAHaJQ&pid=Api&P=0&h=180" alt="picture of viet truong">
-      </div>
-    </section>
-    <section class="about-me">
-      <div>
-        <img src="https://tse2.mm.bing.net/th?id=OIP.o7IkIdTxFQ_5X4BbBfOOrAHaJQ&pid=Api&P=0&h=180" alt="stock picture">
-      </div>
-      <div>
-        <span>about me</span>
-        <h2>A dedicated Front-end Developer based in Edmonton, Canada</h2>
-        <p>As a Junior Front-End Developer, I passess an impressive arsenal of skills in HTML, CSS, Javascript, React, Tailwind, Next.js, and SCSS. I excel in designing and maintaning responsive websites that offer a smooth user experience. My expertise lies in creafting dynamic,engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techiniques, I am also a team player who thrives in collborating with cross-functional teams to produce outstanding web applicatioin.</p>
-      </div>
-    </section>
+    </section> 
   </main>
-  
+  </div>
 </body>
 </html>
