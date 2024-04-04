@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,22 @@ p {
     line-height: 1.6;
     font-size: 18px;
   
+}
+
+a {
+  color: #2d2e32;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #147efb;
+  transition: 0.4s;
+}
+
+h4 {
+  text-transform: uppercase;
+  color: #147efb;
 }
 
 header {
@@ -80,6 +97,11 @@ header nav ul li {
 }
 
 /* hero-text */
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
 
 h1 {
   font-size: 48px;
@@ -163,4 +185,98 @@ h1 {
   gap: 10px;
   padding: 80px;
 
+}
+
+/* PROJECTS PAGE */
+.projects {
+  max-width: 960;
+  margin: 0 auto;
+  height: 400px;
+}
+
+/* ABOUT PAGE */
+
+.about-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.about-page>p {
+  padding: 10px 0;
+}
+
+/* CONTACT PAGE */
+
+.contact {
+  background-color: #fff;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 100px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contact-content>div {
+  display: flex;
+  gap: 50px;
+}
+
+.contact-content>h2 {
+  margin-bottom: 36px;
+  max-width: 400px;
+}
+
+.location {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.location-icon,
+.mail-icon {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(18, 17, 17, 0.09);
+  /* background-color: red; */
+}
+
+.location-icon>span,
+.mail-icon>span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the icon */
+}
+
+.mail {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #2d2e32;
+  
+}
+
+.footer-p {
+  color: #fff;
+}
+
+footer>div {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
 }
