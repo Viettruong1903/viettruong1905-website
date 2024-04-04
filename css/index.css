@@ -112,6 +112,13 @@ h1 {
   height: 50px;
 }
 
+.resume {
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .hero-img {
   animation: morph 8s ease-in-out infinite;
   background-image: url('../img/IMG_0816.jpg');
