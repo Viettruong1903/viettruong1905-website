@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -6,12 +11,13 @@ body {
   color: #2d2e32;
 }
 
-p{
+
+p {
     color: #555;
-    font-family: Mulish, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.6;
     font-size: 18px;
+  
 }
 
 header {
@@ -21,7 +27,7 @@ header {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.09);
   height: auto;
-  padding: 10px 50px;
+  padding: 25px 50px;
   z-index: 200;
   position: fixed;
   left: 0;
@@ -63,15 +69,18 @@ header nav ul li {
   padding-top: 150px;
   max-width: 960px;
   margin: 0 auto;
+  height: 100vh;
 }
 
 .hero-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 /* hero-text */
+
 h1 {
   font-size: 48px;
 }
@@ -82,16 +91,76 @@ h1 {
 }
 
 .hero-img {
-  -webkit-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
-  background-image: url(/static/media/pfp_webp.f334283….webp);
+  background-image: url('../img/IMG_0816.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   border: 3px solid #2d2e32;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  height: 35rem;
+  height: 30rem;
   position: relative;
   transition: all 1s ease-in-out;
-  width: 35rem;
+  width: 30rem;
+}
+
+/* .hero-text > p {
+  padding: 0 100px 0 0;
+} */
+
+/* skills */
+.skills {
+  display: flex;
+  justify-content:left;
+  align-items: center;
+}
+
+.logos ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 500px;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 40% 30% 70% 60% / 30% 70% 60% 40%;
+  }
+  100% {
+    border-radius: 30% 70% 60% 40% / 70% 60% 40% 30%;
+  }
+}
+
+/* <section>About Me</section> */
+
+.aboutMe-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+.aboutMe-section div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+.img-side__main-img {
+  width: 350px;
+  height: auto; 
+  object-fit: cover;
+  border-radius: 18px;
+  
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  gap: 10px;
+  padding: 80px;
+
 }
