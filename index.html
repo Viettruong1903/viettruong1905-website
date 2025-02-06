@@ -19,21 +19,50 @@
     <header> 
       <div class="maxWidth-1140px">
 
-        <div class="logo">
-          <a href="index.html">
-            <img src="img/logo-whitebg.png" alt="Website Logo">
+        
+          <a href="index.html" title="Home - Viet Truong Website">
+            <img 
+              src="img/website-logo-for-white-background.svg" alt="Viet Truong's Website Logo" 
+              width="200" 
+              height="80" 
+              class="logo"
+            >
           </a>
-        </div>
-  
-        <nav>
-          <ul>
-            <li><a href="index.html" onclick="scrollToTop(); return false;">Home</a></li>
-            <li><a href="about.html#about">Abouts</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        
+        
+        <div class="left-navigation">
 
+          <nav>
+            <ul>
+              <li><a href="index.html" onclick="scrollToTop(); return false;">Home</a></li>
+              <li><a href="about.html#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </nav>
+  
+          <a class="cta btn-primary" href="#contact">Contact</a>
+
+          <button class="hamburger" aria-label="Toggle Navigation">
+            <img src="img/hamburger-menu-icon.svg" 
+            width="30"
+            height="30"
+            alt="Menu Icon" 
+            class="menu-icon">
+          </button>
+
+          <!-- Dropdown meny for mobile/table -->
+          <div class="dropdown-menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+
+            <a class="cta btn-primary" href="#contact">Contact</a>
+          </div>
+
+        </div>
+        
       </div>
     </header>
     <main>

@@ -49,10 +49,14 @@ body {
   a {
     color: $text-color;
     cursor: pointer;
+    text-decoration: none
   }
 
 }
 
+@import 'mediaqueries';
+@import 'buttons';
+@import 'header';
 
 
 

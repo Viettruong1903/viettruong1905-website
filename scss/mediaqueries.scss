@@ -1,0 +1,25 @@
+
+//Define the Breakpoint
+$small: 576px;
+$medium: 768px;
+$large: 1140px;
+
+@mixin bp($breakpoint){
+  @if $breakpoint == small {
+    @media (max-width: $small){
+      @content;
+    }
+  }
+
+  @else if $breakpoint == medium{
+    @media (min-width: $small + 1) and (max-width: 1139px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == large {
+    @media (min-width: $large) {
+      @content;
+    }
+  }
+}
