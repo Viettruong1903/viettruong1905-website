@@ -15,6 +15,7 @@
   <title>Viet Truong | Front-End Developer</title>
 </head>
 <body>
+  
   <div class="root">
     <header> 
       <div class="maxWidth-1140px">
@@ -34,15 +35,15 @@
 
           <nav>
             <ul>
-              <li><a href="index.html" onclick="scrollToTop(); return false;">Home</a></li>
-              <li><a href="about.html#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="index.html" onclick="scrollToTop(); return false;" tabindex="0">Home</a></li>
+              <li><a href="about.html#about" tabindex="0">About</a></li>
+              <li><a href="#projects" tabindex="0">Projects</a></li>
             </ul>
           </nav>
   
           <a class="cta btn-primary" href="#contact">Contact</a>
 
-          <button class="hamburger" aria-label="Toggle Navigation">
+          <button class="hamburger" aria-label="Open Menu">
             <img src="img/hamburger-menu-icon.svg" 
             width="30"
             height="30"
@@ -52,14 +53,24 @@
 
           <!-- Dropdown meny for mobile/table -->
           <div class="dropdown-menu">
+            <button class="close-hamburger-icon" aria-label="Close Menu" aria-expanded="false">
+              <img src="img/close-hamburger-icon.svg" 
+              width="30"
+              height="30" 
+              alt="Close Hamburger Icon"
+              class="close-icon">
+            </button>
+
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html#about">About</a></li>
-              <li><a href="#projects">Projects</a></li>
+              <li><a href="index.html" tabindex="0">Home</a></li>
+              <li><a href="about.html#about"  tabindex="0">About</a></li>
+              <li><a href="#projects"  tabindex="0">Projects</a></li>
             </ul>
 
-            <a class="cta btn-primary" href="#contact">Contact</a>
+            <a class="dropdown-cta btn-primary" href="#contact">Contact</a>
           </div>
+
+          <div class="overlay"></div>
 
         </div>
         

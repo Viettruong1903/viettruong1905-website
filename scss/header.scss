@@ -85,21 +85,101 @@ header {
         }
       }
 
-      .dropdown-menu{
-        display: none;
-        background-color: red;
+      .dropdown-menu {
+        background-color: $white-color;
         width: 70%;
-        position: absolute;
-        right: 100%;
+        position: fixed;
         top: 0;
         bottom: 0;
-      }
-
-      .hamburger.active + .dropdown-menu{
-        display: block;
         right: 0;
+        transform: translateX(100%); /* Hidden off-screen */
+        transition: transform 0.5s ease;
+        z-index: 100;
+        opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2rem 0.5rem;
+        gap: 2rem;
+
+        @include bp(large) {
+          display: none;
+        }
+
+        .close-hamburger-icon{
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          align-self: flex-end;
+          margin-right: 1rem;
+        }
+
+        ul{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          // width: 300px;
+          gap: 32px;
+          padding: 0;
+          font-weight: 700;
+          font-size: large;
+          align-self: stretch;
+          margin: 0 1rem;
+
+          li{
+            list-style: none;
+            border-bottom: solid 1px $text-color;
+            padding: 0.5rem 0;
+            
+            a{
+              display: block;
+              width: 100%;
+
+              &:hover{
+                color: $primary-color;
+                transition: ease-in-out 0.2s;
+              }
+            }
+          }
+        }
+        
+        .dropdown-cta {
+          align-self: stretch;
+          margin: 0 1rem;
+          text-align: center;
+        }
+      }
+      
+      .dropdown-menu.active {
+        transform: translateX(0); /* Slide into view */
       }
       
     }
   }
 }
+
+.overlay {
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+  background: rgba(0, 0, 0, 0.5); 
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  pointer-events: all;
+  transition: opacity 0.3s ease;
+
+  @include bp(large) {
+    display: none;
+  }
+}
+
+
+

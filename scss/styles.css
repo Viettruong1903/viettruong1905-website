@@ -155,15 +155,86 @@ header .maxWidth-1140px .left-navigation .hamburger {
   }
 }
 header .maxWidth-1140px .left-navigation .dropdown-menu {
-  display: none;
-  background-color: red;
+  background-color: #ffffff;
   width: 70%;
-  position: absolute;
-  right: 100%;
+  position: fixed;
   top: 0;
   bottom: 0;
-}
-header .maxWidth-1140px .left-navigation .hamburger.active + .dropdown-menu {
-  display: block;
   right: 0;
+  transform: translateX(100%); /* Hidden off-screen */
+  transition: transform 0.5s ease;
+  z-index: 100;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 0.5rem;
+  gap: 2rem;
+}
+@media (min-width: 1140px) {
+  header .maxWidth-1140px .left-navigation .dropdown-menu {
+    display: none;
+  }
+}
+header .maxWidth-1140px .left-navigation .dropdown-menu .close-hamburger-icon {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 1rem;
+}
+header .maxWidth-1140px .left-navigation .dropdown-menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 0;
+  font-weight: 700;
+  font-size: large;
+  align-self: stretch;
+  margin: 0 1rem;
+}
+header .maxWidth-1140px .left-navigation .dropdown-menu ul li {
+  list-style: none;
+  border-bottom: solid 1px #2d2d2d;
+  padding: 0.5rem 0;
+}
+header .maxWidth-1140px .left-navigation .dropdown-menu ul li a {
+  display: block;
+  width: 100%;
+}
+header .maxWidth-1140px .left-navigation .dropdown-menu ul li a:hover {
+  color: #3a86ff;
+  transition: ease-in-out 0.2s;
+}
+header .maxWidth-1140px .left-navigation .dropdown-menu .dropdown-cta {
+  align-self: stretch;
+  margin: 0 1rem;
+  text-align: center;
+}
+header .maxWidth-1140px .left-navigation .dropdown-menu.active {
+  transform: translateX(0); /* Slide into view */
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  pointer-events: all;
+  transition: opacity 0.3s ease;
+}
+@media (min-width: 1140px) {
+  .overlay.active {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
