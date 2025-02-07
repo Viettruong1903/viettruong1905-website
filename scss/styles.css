@@ -338,12 +338,12 @@ footer .footer-container .information-container .contact-me .social-icon {
   gap: 2rem;
   flex-direction: column;
 }
-footer .footer-container .information-container .contact-me .phone-email p,
-footer .footer-container .information-container .contact-me .social-icon p {
+footer .footer-container .information-container .contact-me .phone-email address p,
+footer .footer-container .information-container .contact-me .social-icon address p {
   color: #818181;
 }
-footer .footer-container .information-container .contact-me .phone-email p a,
-footer .footer-container .information-container .contact-me .social-icon p a {
+footer .footer-container .information-container .contact-me .phone-email address p a,
+footer .footer-container .information-container .contact-me .social-icon address p a {
   color: #ffffff;
 }
 

@@ -106,7 +106,7 @@ footer {
           gap: 2rem;
           flex-direction: column;
           
-          address {}
+          address{
             p{
               color: $text-light-color;
               a{
@@ -114,6 +114,7 @@ footer {
               }
               
             }
+          }
           }
         }
       }
