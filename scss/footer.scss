@@ -1,0 +1,131 @@
+// Based on mobile view
+footer {
+  background-color: #101010;
+
+  .footer-container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+
+    @include bp(large){
+      flex-direction: row;
+    }
+
+
+    .branding-container{
+      // background-color: lightblue;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      @include bp(medium) {
+        width: 25rem;
+      }
+
+      @include bp(large){
+        width: 25rem;
+      }
+
+      .logo{
+        width: 150px;
+        height: 60px;
+        max-width: 100%;
+        height: auto;
+  
+        @include bp(large){
+          width: 200px;
+          height: 80px;
+        }
+      }
+
+      p{
+        color: $text-light-color;
+      }
+
+      .footer-cta {
+        text-align: center;
+      }
+    }
+
+    .information-container{
+      // background-color: lightcoral;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      @include bp(large){
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 5rem;
+      }
+
+      .browses,
+      .web-services
+      {
+        color: $white-color;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        nav{
+          ul{
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            li{
+              list-style: none;
+              a{
+                display: block;
+                width: 100%;
+                color: $text-light-color;
+              }
+            }
+          }
+        }
+      }
+
+      .contact-me{
+        color: $white-color;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        .phone-email,
+        .social-icon
+        {
+          display: flex;
+          gap: 2rem;
+          flex-direction: column;
+          
+          address {}
+            p{
+              color: $text-light-color;
+              a{
+                color: $white-color;
+              }
+              
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .small-section{
+    background-color: black;
+    height: 30px;
+    padding: 1rem;
+    text-align: center;
+    small{
+      color: $text-light-color;
+    }
+  }
