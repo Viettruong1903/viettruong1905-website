@@ -1,40 +1,117 @@
 // Based on Mobile View
 .hero {
   padding-top: 100px;
-  height: 70vh;
+  padding-bottom: 4rem;
+  // height: 70vh;
+
+  @include bp(large){
+    height: 60vh;
+  }
 
   .hero-main{
     padding: 0 1rem;
 
-    .text{
+    @include bp(medium){
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 8rem;
+    }
+
+    @include bp(large){
+      padding-top: 110px;
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 8rem;
+    }
+
+    .content{
+      
+
+      margin-bottom: 2rem;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      gap: 1.5rem;
-      margin-bottom: 4rem;
 
-      .cta-buttons{
+      @include bp(medium) {
+        flex: 2;
+      }
+
+      @include bp(large) {
+        flex: 2;
+      }
+
+      .text{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         gap: 1.5rem;
-        text-align: center;
-      }
-    }
-    
-    .stats{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+        margin-bottom: 4rem;
+  
+        .cta-buttons{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          gap: 1.5rem;
+          text-align: center;
 
-      dl{
-        dd{
-          font-size: 3rem;
-          font-family: 'Roboto';
-          font-weight: 500;
-          color: $text-light-color;
+          @include bp(medium){
+            flex-direction: row;
+          }
+
+          @include bp(large){
+            flex-direction: row;
+          }
+        }
+      }
+      
+      .stats{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        @include bp(large){
+          justify-content: flex-start;
+          gap: 3rem;
+        }
+        dl{
+          dd{
+            font-size: 3rem;
+            font-family: 'Roboto';
+            font-weight: 500;
+            color: $text-light-color;
+          }
+          dt{
+            font-family: 'Open Sans';
+            color: $text-light-color;
+          }
         }
       }
     }
+
+    .hero-img{
+      background-image: url('../img/IMG_0816.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 3px solid #2d2e32;
+      border-radius: 5rem;
+      height: 20rem;
+      width: 100%;
+      position: relative;
+      transition: all 1s;
+
+      @include bp(medium){
+        flex: 1;
+      }
+
+      @include bp(large){
+        flex: 1;
+      }
+      
+    }
+    
   }
 }
