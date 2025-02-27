@@ -1,0 +1,115 @@
+.services-section{
+  margin: 4rem 0;
+  padding: 4rem 0;
+  border-radius: 80px;
+  background: linear-gradient(to bottom, #2e69cc, #84B3FF);
+
+  @include bp(large){
+    padding: 6rem 0;
+  }
+  .white-bg{
+    background-color: white;
+    padding: 4rem 1rem 6rem 1rem;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+
+    @include bp(medium){
+      border-radius: 80px;
+    }
+
+    @include bp(large){
+      border-radius: 80px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .services{
+
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      @include bp(medium){
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        
+      }
+      @include bp(large){
+        display: flex;
+        flex-direction: row;
+        max-width: 1140px;
+        margin: 0 auto;
+        gap: 4rem;
+        
+      }
+
+      .contents{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include bp(medium){
+          flex: 1;
+        }
+
+        @include bp(large){
+          width: 600px;
+        }
+        p{
+          color: $color2;
+        }
+        .slide{
+          display: none;
+
+          @include bp(medium){
+            display: block;
+            width: 150px;
+            text-align: center;
+          }
+          @include bp(large){
+            display: block;
+            width: 150px;
+            text-align: center;
+          }
+        }
+      }
+
+      .lists {
+        display: flex;
+        flex-direction: column;
+
+        @include bp(medium){
+          flex: 1;
+        }
+
+        ul{
+          list-style: none;
+
+          li{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+          }
+        }
+        .slide{
+          margin-top: 1rem;
+          width: 150px;
+          text-align: center;
+
+          @include bp(medium){
+            display: none;
+          }
+          @include bp(large){
+            display: none;
+          }
+        }
+      }
+      
+    
+      
+    }
+    
+  }
+}

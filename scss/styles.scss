@@ -3,6 +3,7 @@ $hover-color: #2e69cc;
 $white-color: #ffffff;
 $background-light-color: #f5f5f5;
 $text-color: #2d2d2d;
+$color2: #292D34;
 $text-light-color: #818181;
 
 * {
@@ -61,5 +62,7 @@ body {
 @import 'buttons';
 @import 'header';
 @import 'herosection';
+@import 'client-websites';
+@import 'services-section';
 
 @import 'footer';
