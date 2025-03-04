@@ -18,31 +18,177 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <!-- link -->
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="scss/styles.css">
   <title>About me</title>
 </head>
 <body>
   <div class="root">
     <header> 
-      <h3 class="logo"><a href="index.html">VietTruong.dev</a></h3>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li><a href="about.html">About</a></li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
+      <div class="maxWidth-1140px">
 
-    <section class="about-page">
-      <h1>About Me</h1>
-      <p>Hello! I'm Viet, a recent graduate from the Northern Alberta Institute of Technology (NAIT), where I specialized in web development. Over the past few years, both inside and outside the classroom, I've dedicated myself to honing my skills in this dynamic field</p>
-      <p>During my time at NAIT, I undertook numerous projects that provided me with invaluable hands-on experience with various web development technologies. One of the most notable projects I contributed to was UrbanBazzar, a collaborative effort where my team and I developed a responsive e-commerce website from scratch. My role encompassed designing the frontend layout using HTML and CSS, as well as implementing client-side interactivity with JavaScript. This project not only deepened my understanding of web development principles but also honed my ability to work effectively within a team environment, meeting deadlines and delivering quality results.</p>
-      <p>In addition to my academic endeavors, I actively pursued freelance opportunities to gain real-world experience. For instance, I had the privilege of creating website for my aunt beaute business where I had the opportunity to assist the development in building and maintaining web applications for a diverse range of clients. This experience was instrumental in allowing me to apply my theoretical knowledge to real-world scenarios, while also familiarizing myself with industry best practices and standards.</p>
-      <p>Outside of my academic and professional pursuits, I'm deeply passionate about designing,a craft that demands precision and attention to detail—qualities that resonate deeply with me. I find joy in meticulously designing intricate patterns and experimenting with color combinations, constantly seeking to elevate my skills and techniques.</p>
-      <p>In summary, my journey through NAIT and my subsequent experiences have equipped me with a robust foundation in web development, coupled with practical skills and a strong work ethic. I'm eager to leverage these assets to contribute meaningfully to innovative projects and continue my growth as a professional in the field.</p>
-      <p>Free free to contact me: <a>truong.viet1903@gmail.com</a></p>
-    </section>
+        
+          <a href="index.html" title="Home - Viet Truong Website">
+            <img 
+              src="img/website-logo-for-white-background.svg" alt="Viet Truong's Website Logo" 
+              width="200" 
+              height="80" 
+              class="logo"
+            >
+          </a>
+        
+        
+        <div class="left-navigation">
+
+          <nav>
+            <ul>
+              <li><a href="index.html" onclick="scrollToTop(); return false;" tabindex="0">Home</a></li>
+              <li><a href="about.html#about" tabindex="0">About</a></li>
+              <li><a href="#projects" tabindex="0">Projects</a></li>
+            </ul>
+          </nav>
+  
+          <a class="cta btn-primary" href="#contact">Contact</a>
+
+          <button class="hamburger" aria-label="Open Menu">
+            <img src="img/hamburger-menu-icon.svg" 
+            width="30"
+            height="30"
+            alt="Menu Icon" 
+            class="menu-icon">
+          </button>
+
+          <!-- Dropdown meny for mobile/table -->
+          <div class="dropdown-menu">
+            <button class="close-hamburger-icon" aria-label="Close Menu" aria-expanded="false">
+              <img src="img/close-hamburger-icon.svg" 
+              width="30"
+              height="30" 
+              alt="Close Hamburger Icon"
+              class="close-icon">
+            </button>
+
+            <ul>
+              <li><a href="index.html" tabindex="0">Home</a></li>
+              <li><a href="about.html#about"  tabindex="0">About</a></li>
+              <li><a href="#projects"  tabindex="0">Projects</a></li>
+            </ul>
+
+            <a class="dropdown-cta btn-primary" href="#contact">Contact</a>
+          </div>
+
+          <div class="overlay"></div>
+
+        </div>
+        
+      </div>
+    </header>
+    <main>
+      <section class="about">
+        <h1>About Me</h1>
+        <p>Hello! I'm Viet, a recent graduate from the Northern Alberta Institute of Technology (NAIT), where I specialized in web development. Over the past few years, both inside and outside the classroom, I've dedicated myself to honing my skills in this dynamic field</p>
+        <p>During my time at NAIT, I undertook numerous projects that provided me with invaluable hands-on experience with various web development technologies. One of the most notable projects I contributed to was UrbanBazzar, a collaborative effort where my team and I developed a responsive e-commerce website from scratch. My role encompassed designing the frontend layout using HTML and CSS, as well as implementing client-side interactivity with JavaScript. This project not only deepened my understanding of web development principles but also honed my ability to work effectively within a team environment, meeting deadlines and delivering quality results.</p>
+        <p>In addition to my academic endeavors, I actively pursued freelance opportunities to gain real-world experience. For instance, I had the privilege of creating website for my aunt beaute business where I had the opportunity to assist the development in building and maintaining web applications for a diverse range of clients. This experience was instrumental in allowing me to apply my theoretical knowledge to real-world scenarios, while also familiarizing myself with industry best practices and standards.</p>
+        <p>Outside of my academic and professional pursuits, I'm deeply passionate about designing,a craft that demands precision and attention to detail—qualities that resonate deeply with me. I find joy in meticulously designing intricate patterns and experimenting with color combinations, constantly seeking to elevate my skills and techniques.</p>
+        <p>In summary, my journey through NAIT and my subsequent experiences have equipped me with a robust foundation in web development, coupled with practical skills and a strong work ethic. I'm eager to leverage these assets to contribute meaningfully to innovative projects and continue my growth as a professional in the field.</p>
+        <p>Free free to contact me: <a>truong.viet1903@gmail.com</a></p>
+      </section>
+  
+      <footer>
+        <div class="footer-container">
+  
+          <section class="branding-container">
+  
+            <div>
+              <a href="index.html" title="Home - Viet Truong Website">
+                <img src="img/viet-truong-website-for-black-background.svg"
+                alt="Viet Truong's Website Logo"
+                class="logo">
+              </a>
+            </div>
+  
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+  
+            <a class="footer-cta btn-primary" href="contact.html">Contact me</a>
+          </section>
+  
+          <section class="information-container">
+            <section class="browses">
+              <div>
+                <h4>Browses</h4>
+                <!-- line -->
+              </div>
+              <nav aria-label="footer-navigation">
+                <ul>
+                  <li><a href="index.html" onclick="scrollToTop(); return false;">Home</a></li>
+                  <li><a href="about.html">Abouts</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                </ul>
+              </nav>
+            </section>
+  
+            <section class="web-services">
+              <div>
+                <h4>Web Services</h4>
+                <!-- line -->
+              </div>
+              <nav aria-label="footer-navigation">
+                <ul>
+                  <li><a href="#" onclick="scrollToTop(); return false;">Website Design & Development</a></li>
+                  <li><a href="#">Website Speed Optimization</a></li>
+                  <li><a href="#">Ranking Website on Google</a></li>
+                </ul>
+              </nav>
+            </section>
+  
+            <section class="contact-me">
+              <div class="phone-email">
+                <div>
+                  <h4>Contact me</h4>
+                  <!-- line -->
+                </div>
+                
+                <address>
+                  <p>Based in Edmonton, Alberta</p>
+                  <p>Email: <a href="mailto:zeronam34@gmail.com">zeronam34@gmail.com</a></p>
+                  <p>Phone: <a href="tel:+17806042490">+1 (780) 604-2490</a></p>
+                </address>
+              </div>
+  
+              <div class="social-icon">
+                <div>
+                  <h4>Social</h4>
+                  <!-- line -->
+                </div>
+                
+                <div class="footerc__socials">
+                  <a aria-label="linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/viet-truong-6869b3324/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin">
+                      <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path>
+                      <path d="M8 8l0 .01"></path>
+                      <path d="M12 16l0 -5"></path>
+                      <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                    </svg>
+                  </a>
+                  <a aria-label="github" target="_blank" rel="noreferrer" href="https://github.com/Viettruong1903">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github">
+                      <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </section>
+            
+          </section>
+        </div>
+        <div class="small-section">
+          <small>
+            &copy; 2025 | Hoang Viet Truong | All rights reserved. <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+          </small>
+        </div>
+    
+      </footer>
+    </main>
+    
   </div>
 </body>
 </html>

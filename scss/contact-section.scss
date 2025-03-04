@@ -1,0 +1,111 @@
+.contact {
+  background-color: $text-light-color;
+  color: $white-color;
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 1rem;
+    max-width: 1140px;
+    margin: 0 auto;
+
+    h2{
+      max-width: 400px;
+      margin-bottom: 36px;
+    }
+
+    div{
+      display: flex;
+      gap: 4rem;
+
+      @include bp(small){
+        flex-direction: column;
+      }
+
+      .location {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        div{
+          display: inline;
+          a{
+            color: $white-color;
+          }
+        }
+
+        @include bp(small){
+          flex-direction: row;
+        }
+
+        .location-icon{
+          position: relative;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: whitesmoke;
+          box-shadow: 0 0 10px rgba(18, 17, 17, 0.09);
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the icon */
+          }
+        }
+      }
+
+      .mail {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+
+        div{
+          display: inline;
+          a{
+            color: $white-color;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+
+        @include bp(small){
+          flex-direction: row;
+        }
+
+        .mail-icon {
+          position: relative;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: whitesmoke;
+          box-shadow: 0 0 10px rgba(18, 17, 17, 0.09);
+          span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the icon */
+          }
+        }
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+.location-icon>span,
+.mail-icon>span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the icon */
+}
+
+

@@ -1,0 +1,28 @@
+.aboutMe-section {
+  background-color: #fff;
+  padding: 80px 0;
+}
+.aboutMe-section div {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.aboutMe-section div .img-content .img-side__main-img {
+  width: 350px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 18px;
+}
+.aboutMe-section div .about-text {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  gap: 10px;
+  padding: 80px;
+}
+.aboutMe-section div .about-text .aboutme {
+  width: 100px;
+  text-align: center;
+}/*# sourceMappingURL=about-section.css.map */

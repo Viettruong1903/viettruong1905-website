@@ -1,0 +1,49 @@
+.aboutMe-section {
+  background-color: #fff;
+  padding: 80px 0;
+ 
+  div{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    gap: 4rem;
+    margin: 0 auto;
+    
+    @include bp(medium){
+      gap: 2rem;
+      padding: 0 1rem;
+    }
+    
+    @include bp(small){
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .img-content{
+      .img-side__main-img {
+        width: 350px;
+        height: auto; 
+        object-fit: cover;
+        border-radius: 18px;
+
+        @include bp(small){
+          width: 100%;
+        }
+      }
+    }
+
+    .about-text {
+      display: flex;
+      flex-direction: column;
+      align-self: start;
+      gap: 10px;
+
+      .aboutme{
+        width: 150px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+
