@@ -39,12 +39,16 @@
     }
 
     .projects{
+      padding: 2rem 1rem;
 
+      @include mediaqueries.bp('large'){
+        padding: 3rem 1rem;
+      }
       .cards-container{
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem 3rem;
-        padding: 2rem 1rem;
+        margin-top: 2rem;
 
         @include mediaqueries.bp('medium'){
           grid-template-columns: 1fr 1fr;
@@ -54,6 +58,7 @@
         @include mediaqueries.bp('large'){
           grid-template-columns: 1fr 1fr 1fr;
           gap: 2rem 3rem;
+          margin-top: 3rem;
         }
 
         .card{
@@ -69,13 +74,13 @@
             img{
               width: 100%;
               height: 100%;
-              object-fit: cover;
+              object-fit: contain;
             }
           }
           .website-details{
             @include reuseable.flexCSS(column, space-between, flex-start);
             padding: 1rem 0.5rem;
-            gap: 1rem 0;
+            // gap: 1rem 0;
             background-color: rgba(255,255,255,.65);
 
             // @include mediaqueries.bp('large'){
