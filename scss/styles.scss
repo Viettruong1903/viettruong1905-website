@@ -1,3 +1,5 @@
+@use 'projects';
+
 $primary-color: #3a86ff;
 $hover-color: #2e69cc;
 $white-color: #ffffff;
@@ -67,5 +69,7 @@ body {
 @import 'about-section';
 @import 'contact-section';
 @import 'about-page';
+
+
 
 @import 'footer';

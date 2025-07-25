@@ -1,0 +1,116 @@
+@use 'reuseable';
+@use 'mediaqueries';
+
+.root{
+  main{
+    .banner{
+      background-image: url('img/banner-pattern.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 90px;
+      background-color: black;
+
+      .banner-main{
+        @include reuseable.flexCSS(column, space-between, center);
+        gap: 1rem;
+        padding: 2rem 1rem;
+
+        @include mediaqueries.bp('medium'){
+          padding: 2rem 1rem;
+        }
+
+        @include mediaqueries.bp('large'){
+          padding: 4rem 1rem;
+          gap: 2rem;
+        }
+
+        h1{
+          color: whitesmoke;
+        }
+
+        .banner-text{
+          background-color: whitesmoke;
+          padding: 1rem;
+          border-radius: 8px;
+          max-width: 700px;
+        }
+      }
+    }
+
+    .projects{
+
+      .cards-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem 3rem;
+        padding: 2rem 1rem;
+
+        @include mediaqueries.bp('medium'){
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem 3rem;
+        }
+
+        @include mediaqueries.bp('large'){
+          grid-template-columns: 1fr 1fr 1fr;
+          gap: 2rem 3rem;
+        }
+
+        .card{
+          border-radius: 2px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          .website-profile{
+            width: 100%;
+            height: 300px;
+            background-color: lightcoral;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+          }
+          .website-details{
+            @include reuseable.flexCSS(column, space-between, flex-start);
+            padding: 1rem 0.5rem;
+            gap: 1rem 0;
+            background-color: rgba(255,255,255,.65);
+
+            // @include mediaqueries.bp('large'){
+            //   @include reuseable.flexCSS(row, space-between, flex-start)
+            // }
+            
+              h3{
+                font-size: 18px;
+              }
+              
+              .buttons{
+                @include reuseable.flexCSS(row, space-between, flex-start);
+                gap: 1rem;
+                .detail-btn{
+                  background-color: #3a86ff;
+                  color: white;
+                  font-size: 14px;
+                  font-weight: 500;
+                  border-radius: 25px;
+                  padding: 8px 32px;
+                  border: none;
+                  cursor: pointer;
+
+                  &:hover{
+                    background-color: #2e69cc;
+                  }
+                }
+                .site-btn{
+                  background-color: white;
+                  color: #3a86ff;
+                  font-size: 14px;
+                  font-weight: 500;
+                  border-radius: 25px;
+                  padding: 8px 32px;
+                  border: 1px solid #3a86ff;
+                  cursor: pointer;
+                }
+              }
+          }
+        } 
+      }
+    }
+  }
+}

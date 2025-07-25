@@ -12,7 +12,7 @@ $large: 1140px;
   }
 
   @else if $breakpoint == medium{
-    @media (min-width: $small + 1) and (max-width: 1139px) {
+    @media (min-width: 769px) and (max-width: 1139px) {
       @content;
     }
   }

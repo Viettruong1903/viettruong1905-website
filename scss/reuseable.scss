@@ -1,0 +1,11 @@
+.maxWidth-1140px{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+@mixin flexCSS($direction, $justify-content, $align-item){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify-content;
+  align-items: $align-item;
+}
