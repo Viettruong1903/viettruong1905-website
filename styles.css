@@ -64,9 +64,14 @@
 .root main .projects .cards-container .card .website-profile {
   width: 100%;
   height: 300px;
-  background-color: lightcoral;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+  border-bottom: solid 1px #bebebe;
+}
+.root main .projects .cards-container .card .website-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .root main .projects .cards-container .card .website-details {
   display: flex;
@@ -90,7 +95,7 @@
 .root main .projects .cards-container .card .website-details .buttons .detail-btn {
   background-color: #3a86ff;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   border-radius: 25px;
   padding: 8px 32px;
@@ -103,7 +108,7 @@
 .root main .projects .cards-container .card .website-details .buttons .site-btn {
   background-color: white;
   color: #3a86ff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   border-radius: 25px;
   padding: 8px 32px;
