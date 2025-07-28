@@ -31,3 +31,35 @@ function scrollToTop() {
     behavior: 'smooth'
   });
 }
+
+
+
+
+
+// Append it to the container
+// document.getElementById('popup-container').appendChild(clone);
+
+// const popupContainer = document.querySelector('#popup-container');
+
+// Get the template
+const template = document.getElementById('popup');
+const templateBtn = document.getElementById('templateBtn');
+
+templateBtn.addEventListener('click', function() {
+
+  // Clone the template content
+  const clone = template.content.cloneNode(true);
+
+  document.getElementById('popup-container').appendChild(clone);
+  overlay.classList.add('active');
+  body.style.overflow = 'hidden';
+
+  const templateClose = document.getElementById('templateClose');
+  templateClose.addEventListener('click', function() {
+    document.getElementById('popup-container').innerHTML='';
+    overlay.classList.remove('active');
+    body.style.overflow = '';
+    // console.log('hello');
+  })
+})
+

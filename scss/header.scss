@@ -177,9 +177,9 @@ header {
   pointer-events: all;
   transition: opacity 0.3s ease;
 
-  @include bp(large) {
-    display: none;
-  }
+  // @include bp(large) {
+  //   display: none;
+  // }
 }
 
 
