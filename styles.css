@@ -204,7 +204,7 @@ a {
   border-bottom: 1px solid rgba(131, 131, 131, 0.5);
   margin-bottom: 1rem;
 }
-.root main .website-details-popup .popup-template .popup-content .close-template #templateClose .close-btn {
+.root main .website-details-popup .popup-template .popup-content .close-template #templateClose .close-btn, .root main .website-details-popup .popup-template .popup-content .close-template #templateClose-niceagent .close-btn {
   position: absolute;
   font-size: 2rem;
   top: 0;
@@ -216,7 +216,7 @@ a {
   cursor: pointer;
   background-color: white;
 }
-.root main .website-details-popup .popup-template .popup-content .close-template #templateClose .close-btn:hover {
+.root main .website-details-popup .popup-template .popup-content .close-template #templateClose .close-btn:hover, .root main .website-details-popup .popup-template .popup-content .close-template #templateClose-niceagent .close-btn:hover {
   background-color: rgba(199, 199, 199, 0.5);
 }
 .root main .website-details-popup .popup-template .popup-content .website-walkthrough {

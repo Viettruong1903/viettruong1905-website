@@ -45,6 +45,9 @@ function scrollToTop() {
 const template = document.getElementById('popup');
 const templateBtn = document.getElementById('templateBtn');
 
+const templateNiceAgent = document.getElementById('popup-niceagent');
+const templateBtnNiceAgent = document.getElementById('templateBtn-niceagent');
+
 templateBtn.addEventListener('click', function() {
 
   // Clone the template content
@@ -62,4 +65,23 @@ templateBtn.addEventListener('click', function() {
     // console.log('hello');
   })
 })
+
+templateBtnNiceAgent.addEventListener('click', function() {
+
+  // Clone the template content
+  const clone = templateNiceAgent.content.cloneNode(true);
+
+  document.getElementById('popup-container-niceagent').appendChild(clone);
+  overlay.classList.add('active');
+  body.style.overflow = 'hidden';
+
+  const templateCloseNiceAgent = document.getElementById('templateClose-niceagent');
+  templateCloseNiceAgent.addEventListener('click', function() {
+    document.getElementById('popup-container-niceagent').innerHTML='';
+    overlay.classList.remove('active');
+    body.style.overflow = '';
+    // console.log('hello');
+  })
+})
+
 
