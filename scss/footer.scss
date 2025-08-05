@@ -1,5 +1,6 @@
 // Based on mobile view
 @use 'variables' as *;
+@use 'mediaqueries';
 
 footer {
   background-color: #101010;
@@ -13,7 +14,7 @@ footer {
     gap: 2rem;
     
 
-    @include bp(large){
+    @include mediaqueries.bp(large){
       flex-direction: row;
     }
 
@@ -25,11 +26,11 @@ footer {
       flex-direction: column;
       gap: 1rem;
 
-      @include bp(medium) {
+      @include mediaqueries.bp(medium) {
         width: 25rem;
       }
 
-      @include bp(large){
+      @include mediaqueries.bp(large){
         width: 25rem;
       }
 
@@ -39,7 +40,7 @@ footer {
         max-width: 100%;
         height: auto;
   
-        @include bp(large){
+        @include mediaqueries.bp(large){
           width: 200px;
           height: 80px;
         }
@@ -62,7 +63,7 @@ footer {
       justify-content: flex-start;
       gap: 2rem;
 
-      @include bp(large){
+      @include mediaqueries.bp(large){
         flex-direction: row;
         justify-content: flex-end;
         gap: 5rem;

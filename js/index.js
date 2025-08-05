@@ -48,6 +48,9 @@ const templateBtn = document.getElementById('templateBtn');
 const templateNiceAgent = document.getElementById('popup-niceagent');
 const templateBtnNiceAgent = document.getElementById('templateBtn-niceagent');
 
+const templateNguBinh = document.getElementById('popup-ngubinh');
+const templateBtnNguBinh = document.getElementById('templateBtn-ngubinh');
+
 templateBtn.addEventListener('click', function() {
 
   // Clone the template content
@@ -78,6 +81,24 @@ templateBtnNiceAgent.addEventListener('click', function() {
   const templateCloseNiceAgent = document.getElementById('templateClose-niceagent');
   templateCloseNiceAgent.addEventListener('click', function() {
     document.getElementById('popup-container-niceagent').innerHTML='';
+    overlay.classList.remove('active');
+    body.style.overflow = '';
+    // console.log('hello');
+  })
+})
+
+templateBtnNguBinh.addEventListener('click', function() {
+
+  // Clone the template content
+  const clone = templateNguBinh.content.cloneNode(true);
+
+  document.getElementById('popup-container-ngubinh').appendChild(clone);
+  overlay.classList.add('active');
+  body.style.overflow = 'hidden';
+
+  const templateCloseNiceAgent = document.getElementById('templateClose-ngubinh');
+  templateCloseNiceAgent.addEventListener('click', function() {
+    document.getElementById('popup-container-ngubinh').innerHTML='';
     overlay.classList.remove('active');
     body.style.overflow = '';
     // console.log('hello');

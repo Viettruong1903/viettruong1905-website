@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@use 'mediaqueries';
+
 header {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,.09);
@@ -23,7 +25,7 @@ header {
       max-width: 100%;
       height: auto;
 
-      @include bp(small){
+      @include mediaqueries.bp(small){
         width: 150px;
         height: 60px;
       }
@@ -38,12 +40,16 @@ header {
   
       nav{
 
-        @include bp(small){
+        @include mediaqueries.bp(small){
           display: none;
         }
 
-        @include bp(medium){
+        @include mediaqueries.bp(medium){
           display: none;
+        }
+
+        @include mediaqueries.bp(large){
+          display: block;
         }
 
         ul{
@@ -68,10 +74,10 @@ header {
       }
 
       .cta{
-        @include bp(small) {
+        @include mediaqueries.bp(small) {
           display: none;
         }
-        @include bp(medium) {
+        @include mediaqueries.bp(medium) {
           display: none;
         }
       }
@@ -81,7 +87,7 @@ header {
         border: none;
         cursor: pointer;
 
-        @include bp(large){
+        @include mediaqueries.bp(large){
           display: none;
         }
       }
@@ -105,7 +111,7 @@ header {
         padding: 2rem 0.5rem;
         gap: 2rem;
 
-        @include bp(large) {
+        @include mediaqueries.bp(large) {
           display: none;
         }
 
