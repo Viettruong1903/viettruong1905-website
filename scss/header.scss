@@ -80,6 +80,9 @@ header {
         @include mediaqueries.bp(medium) {
           display: none;
         }
+        @include mediaqueries.bp(large){
+          display: block;
+        }
       }
 
       .hamburger{
